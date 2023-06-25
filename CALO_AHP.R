@@ -382,3 +382,6 @@ mp= ggplot(data = mpdt) +
   coord_sf(xlim = c(-102.15, -74.12), ylim = c(7.65, 33.97), expand = FALSE)
 mp
 
+ geom_text(data= world_points,aes(x=X, y=Y, label=name),
+            color = "darkblue", fontface = "bold", check_overlap = FALSE) +
+ 
